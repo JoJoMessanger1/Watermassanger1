@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P-Messenger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>P2P-Messenger</h1>
+
+    <div class="container">
+        <div class="chat-area">
+            <div id="messages"></div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="recipientId" placeholder="Empfänger-ID eingeben...">
+            <input type="text" id="messageInput" placeholder="Nachricht...">
+            <button id="sendButton">Senden</button>
+        </div>
+
+        <div class="info-area">
+            <h2>Deine ID:</h2>
+            <p id="my-id"></p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
